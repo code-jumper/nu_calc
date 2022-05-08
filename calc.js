@@ -70,6 +70,19 @@ let bottle2 = new Bottle(N2, P2, K2, Ca2, Mg2, S2, Cl2, Fe2, Zn2, Cu2, Mn2, Mo2,
 submitButton.addEventListener("click", function(){
     let paragraph = document.createElement("p");
     let finalN = bottle1.n.value * bottle1.dilutionRate.value + bottle2.n.value * bottle2.dilutionRate.value;
+    let finalP = bottle1.p.value * bottle1.dilutionRate.value + bottle2.p.value * bottle2.dilutionRate.value;
+    let finalK = bottle1.k.value * bottle1.dilutionRate.value + bottle2.k.value * bottle2.dilutionRate.value;
+    let finalCa = bottle1.ca.value * bottle1.dilutionRate.value + bottle2.ca.value * bottle2.dilutionRate.value;
+    let finalMg = bottle1.mg.value * bottle1.dilutionRate.value + bottle2.mg.value * bottle2.dilutionRate.value;
+    let finalS = bottle1.s.value * bottle1.dilutionRate.value + bottle2.s.value * bottle2.dilutionRate.value;
+    let finalCl = bottle1.cl.value * bottle1.dilutionRate.value + bottle2.cl.value * bottle2.dilutionRate.value;
+    let finalFe = bottle1.fe.value * bottle1.dilutionRate.value + bottle2.fe.value * bottle2.dilutionRate.value;
+    let finalZn = bottle1.zn.value * bottle1.dilutionRate.value + bottle2.zn.value * bottle2.dilutionRate.value;
+    let finalCu = bottle1.cu.value * bottle1.dilutionRate.value + bottle2.cu.value * bottle2.dilutionRate.value;
+    let finalMn = bottle1.mn.value * bottle1.dilutionRate.value + bottle2.mn.value * bottle2.dilutionRate.value;
+    let finalMo = bottle1.mo.value * bottle1.dilutionRate.value + bottle2.mo.value * bottle2.dilutionRate.value;
+    let finalB = bottle1.b.value * bottle1.dilutionRate.value + bottle2.b.value * bottle2.dilutionRate.value;
+
     paragraph.innerText = finalN
     solutionContainer.appendChild(paragraph);
 })
