@@ -83,6 +83,30 @@ submitButton.addEventListener("click", function(){
     let finalMo = bottle1.mo.value * bottle1.dilutionRate.value + bottle2.mo.value * bottle2.dilutionRate.value;
     let finalB = bottle1.b.value * bottle1.dilutionRate.value + bottle2.b.value * bottle2.dilutionRate.value;
 
-    paragraph.innerText = finalN
+    paragraph.append("Nitrogen: " + finalN);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Phosphorus: " + finalP);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Potassium: " + finalK);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Calcium: " + finalCa);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Magnesium: " + finalMg);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Sulfur: " + finalS);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Chlorine: " + finalCl);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Iron: " + finalFe);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Zinc: " + finalZn);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Copper: " + finalCu);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Manganese: " + finalMn);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Molybdenum: " + finalMo);
+    paragraph.append(document.createElement("br"));
+    paragraph.append("Boron: " + finalB);
     solutionContainer.appendChild(paragraph);
 })

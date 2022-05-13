@@ -5,8 +5,8 @@ p {
     padding: 2px;
 }
 
-.bottle {
-    display: grid;
+.container {
+    display: flex;
 }
 
 #bottlesContainer {
@@ -17,4 +17,12 @@ p {
 #bottlesContainer:nth-child(n) {
     border: 5px;
     border-radius: 5px;
+}
+
+.bottle {
+    display: grid;
+}
+
+#solution {
+    display: flex;
 }
