@@ -1,3 +1,4 @@
+
 {/* v0.toDoList */}
 // let addBottleButton = document.getElementById("addBottle");
 // let bottlesContainer = document.getElementById("bottlesContainer");
@@ -10,6 +11,7 @@
 // })
 
 {/* v0.1 */}
+
 let bottlesContainer = document.getElementById("bottlesContainer");
 let bottleButton = document.getElementById("addBottle");
 let bottlesArray = [];
@@ -20,6 +22,9 @@ let i = 0;
 function makeBottle() {
     let nextBottle = document.createElement("form");
     nextBottle.id = "new-bottle-" + i;
+    let nit = document.createElement("p");
+    nit.append('nitrogen:');
+    nextBottle.append(nit);
     let n = document.createElement("input");
     n.type = 'Number';
     n.id = "n";
@@ -27,6 +32,9 @@ function makeBottle() {
     n.addEventListener("change", function(e) {
         n.value = e.target.value;
     });
+    let phos = document.createElement("p");
+    phos.append('phosphorous:');
+    nextBottle.append(phos);
     let p = document.createElement("input");
     p.type = 'Number';
     p.id = "p";
@@ -34,6 +42,9 @@ function makeBottle() {
     p.addEventListener("change", function(e) {
         p.value = e.target.value;
     })
+    let pot = document.createElement("p");
+    pot.append('potassium:');
+    nextBottle.append(pot);
     let k = document.createElement("input");
     k.type = 'Number';
     k.id = "k";
@@ -41,6 +52,9 @@ function makeBottle() {
     k.addEventListener("change", function(e) {
         k.value = e.target.value;
     })
+    let dilut = document.createElement("p");
+    dilut.append('Dilution Rate (ml/L):');
+    nextBottle.append(dilut);
     let dilutionRate = document.createElement("input");
     dilutionRate.type = 'Number';
     dilutionRate.id = "dilutionRate";
@@ -52,6 +66,7 @@ function makeBottle() {
     bottlesContainer.append(nextBottle);
     
     i++;
+
 };
 
 class Bottle {
