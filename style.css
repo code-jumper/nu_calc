@@ -4,7 +4,7 @@
 }
 
 p {
-    color: #016524;
+    background-color: hsl(141, 64%, 90%);
     border-style: solid;
     border-radius: 1px;
     padding: 2px;
